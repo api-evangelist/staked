@@ -1,8 +1,23 @@
 aid: staked
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/staked.png
 name: Staked
-description: 'Staked is a company surfaced as a portfolio company of pantera-capital and added to the
-  API Evangelist network as a stub for enrichment. Sector: crypto. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Staked was an institutional cryptocurrency staking and delegation provider that ran validator
+  infrastructure and non-custodial staking services across proof-of-stake networks including Ethereum,
+  Solana, Polkadot, and Cosmos. Founded in 2018 and backed by Pantera Capital, Staked was acquired by
+  Kraken in December 2021 and its products have since been folded into Kraken Staking. The former staked.us
+  domain now serves a static notice redirecting users to staking.kraken.com and kraken.com/institutions/staking;
+  no independent developer portal, public API, or documentation surface remains under the Staked brand.'
 url: https://raw.githubusercontent.com/api-evangelist/staked/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +25,21 @@ x-backed-by:
 - pantera-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: kraken
+x-acquired-date: '2021-12'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Crypto
+- Staking
+- Blockchain
+- Ethereum
+- Proof of Stake
+- Validator
+- Institutional
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +49,10 @@ maintainers:
 common:
 - type: Website
   url: https://staked.us/
+- type: DomainSecurity
+  url: security/staked-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
